@@ -21,12 +21,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MATERIAL_MADERA
-  m_Shader: {fileID: -6465566751694194690, guid: 3739e562a03fc0b4982d8aa66cc50865,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: c8a7b29a0e2303448a0213750f7a2845, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _ALPHAPREMULTIPLY_ON
-  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -40,6 +37,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Basecolor:
+        m_Texture: {fileID: 2800000, guid: 84ddae798bb5717419d4b45144506be2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EMISSION_COLOR_MAP:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -50,6 +51,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NORMAL_MAP:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 99f7a013986e0a3408d948ba5b239b7f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SPECULAR_COLOR_MAP:
@@ -79,6 +84,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
+    - _AlphaCutoff: 0.5
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -118,4 +124,5 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SPECULAR_COLOR: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _VTInfoBlock: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
