@@ -96,10 +96,10 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.2
     - _GlossyReflections: 1
-    - _METALNESS: 0
+    - _METALNESS: 2.67
     - _Metallic: 0
     - _Mode: 3
-    - _OPACITY: 0.18589741
+    - _OPACITY: 0.064
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0

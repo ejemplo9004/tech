@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Basecolor:
-        m_Texture: {fileID: 2800000, guid: 1c83866a5f8a8744c8b3bc91584d19be, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8d24a4e5f61c734469f7c6af5e45a0e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EMISSION_COLOR_MAP:
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: e1591b705fc54144fbb98672925db490, type: 3}
+        m_Texture: {fileID: 2800000, guid: 036f2b1e1fec1db4989061d44f3bd6ec, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SPECULAR_COLOR_MAP:
