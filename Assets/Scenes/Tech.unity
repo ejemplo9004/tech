@@ -480,230 +480,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &979542404
+--- !u!1001 &1021077783
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -14.88
       objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.495
       objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9.855
       objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464560123711430347, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9093884997419517041, guid: def35f8fa28ff3d478654306117d7c9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Silla-ejecutiva
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: def35f8fa28ff3d478654306117d7c9c, type: 3}
---- !u!1001 &1487259662
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2147035018}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.197
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.093
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.0000014603138
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e0f70df6243faf24d90c13824c238fd7,
+    - target: {fileID: 6273315934824221659, guid: c5b6892e81bfff44394646995c97158a,
         type: 3}
       propertyPath: m_Name
-      value: "Silla-Teatro-Tama\xF1o"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2392970070037504581, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2392970070037504581, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 2392970070037504581, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.382
-      objectReference: {fileID: 0}
-    - target: {fileID: 4852853940842946094, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.08135605
-      objectReference: {fileID: 0}
-    - target: {fileID: 4852853940842946094, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.19866824
-      objectReference: {fileID: 0}
-    - target: {fileID: 4852853940842946094, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.113871574
-      objectReference: {fileID: 0}
-    - target: {fileID: 7080731969772683890, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.24533749
-      objectReference: {fileID: 0}
-    - target: {fileID: 7080731969772683890, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0409081
-      objectReference: {fileID: 0}
-    - target: {fileID: 7080731969772683890, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.113871574
-      objectReference: {fileID: 0}
-    - target: {fileID: 7721221701894911036, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.15826797
-      objectReference: {fileID: 0}
-    - target: {fileID: 7721221701894911036, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.182024
-      objectReference: {fileID: 0}
-    - target: {fileID: 7721221701894911036, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.38201523
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079721891883909375, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.361
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079721891883909375, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.067162514
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079721891883909375, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.41800067
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079721891883909375, guid: e0f70df6243faf24d90c13824c238fd7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
+      value: 'Silla Teatro '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e0f70df6243faf24d90c13824c238fd7, type: 3}
---- !u!4 &1487259663 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0f70df6243faf24d90c13824c238fd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1487259662}
-  m_PrefabAsset: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: c5b6892e81bfff44394646995c97158a, type: 3}
 --- !u!1001 &1645768226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6152,6 +5997,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -6596780297006226584, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f12efd089ff69d449d4f02ef685289d, type: 2}
     - target: {fileID: -6594172507520506052, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20786,6 +20636,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1049996988540799461, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f12efd089ff69d449d4f02ef685289d, type: 2}
     - target: {fileID: 1054134478000826086, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32961,6 +32816,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7277984579170106804, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f12efd089ff69d449d4f02ef685289d, type: 2}
     - target: {fileID: 7278746393848190957, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33366,6 +33226,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7472961618001398706, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f12efd089ff69d449d4f02ef685289d, type: 2}
     - target: {fileID: 7473596010818044452, guid: 7ccd23a705ae15f4282a6d6b9b79e07b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36586,35 +36451,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2147035017
-GameObject:
+--- !u!1001 &6273315933113543762
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2147035018}
-  m_Layer: 0
-  m_Name: 'Silla Teatro Borde '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2147035018
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147035017}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -11.863, y: 3.416, z: -7.888}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1487259663}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.495
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000014603138
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221656, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273315934824221659, guid: c5b6892e81bfff44394646995c97158a,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Silla Teatro Borde '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5b6892e81bfff44394646995c97158a, type: 3}
