@@ -123,7 +123,7 @@ Material:
     - _EmissionScaleUI: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
-    - _Glossiness: 0.5
+    - _Glossiness: 1
     - _GlossyReflections: 0
     - _LeafTurbulence: 0.5
     - _Metallic: 0
