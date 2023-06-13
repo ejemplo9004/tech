@@ -120,18 +120,18 @@ Material:
     - _Escala: 0.2
     - _FresnelPower: 1
     - _GlitchFrequency: 1
-    - _GlitchOffset: 0
-    - _GlitchSensitivity: 0.997
+    - _GlitchOffset: 0.026
+    - _GlitchSensitivity: 0
     - _GlitchSpeed: 1
     - _GlitchStrength: 0.25
     - _GlossMapScale: 1
     - _Glossiness: 0.4472136
     - _GlossyReflections: 1
-    - _GridDensity: 5
+    - _GridDensity: 6
     - _Intensidad: 1
     - _IntensidadTExtureBase: 0
-    - _Line_Falloff: 0.1
-    - _Line_Thickness: 0.1
+    - _Line_Falloff: -0.06
+    - _Line_Thickness: 0.93
     - _Metallic: 0
     - _Mode: 0
     - _NormalStrength: 1
@@ -141,11 +141,11 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RotationRadians: 0
-    - _SliceDuration: 0.5
+    - _SliceDuration: 0.526
     - _SliceFrequency: 0.1
     - _SliceJitter: 0.05
     - _SliceWidth: 0.2
-    - _Smoothness: 0.4472136
+    - _Smoothness: 0.9
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -158,14 +158,14 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseEmissionColor: {r: 0, g: 0.1647059, b: 1.498039, a: 0.1568628}
+    - _BaseEmissionColor: {r: 0, g: 0.345098, b: 2.996078, a: 0.50980395}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorBase: {r: 0.30327868, g: 1, b: 0, a: 0}
     - _ColorEmision: {r: 1.7207954, g: 1.7207954, b: 1.7207954, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 0, g: 3.513726, b: 32, a: 1}
+    - _FresnelColor: {r: 0, g: 12.397904, b: 32, a: 0.23529412}
     - _GridOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Grid_Velocity: {r: 0, g: 0.1, b: 0, a: 0}
+    - _Grid_Velocity: {r: 0, g: 0.05, b: 0, a: 0}
     - _PerAxisStrength: {r: 1, g: 1, b: 1, a: 0}
     - _RotationAxis: {r: 1, g: 0, b: 0, a: 0}
     - _SliceDirection: {r: 0.2, g: 0, b: 0, a: 0}
