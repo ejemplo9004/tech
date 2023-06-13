@@ -4,15 +4,56 @@ using UnityEngine;
 
 public class Drone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform pivote;
+    public Estado estado;
+    public float frecuencia = 1;
+    public float amplitud = 0.5f;
+    public float velocidad = 2;
+    public Renderer rPantalla;
+
+    public Texture[] texturasPantalla;
+
+
+    private Material material;
+
+	private void Start()
+	{
+        material = rPantalla.materials[1];
+        StartCoroutine(Parpadear());
+	}
+
+
+	void Update()
     {
-        
+        Vector3 posObjetivo = pivote.position + Vector3.up * (Mathf.Sin(Time.time * frecuencia) * amplitud);
+        transform.position = Vector3.Lerp(transform.position, posObjetivo, velocidad * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, pivote.rotation, velocidad * Time.deltaTime);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+    public IEnumerator Parpadear()
+	{
+		while (true)
+		{
+            yield return new WaitForSeconds(Random.Range(2, 5));
+			if (estado == Estado.idle)
+			{
+                CambiaTexturaCara(1);
+                yield return new WaitForSeconds(0.2f);
+            }
+            CambiaTexturaCara(0);
+        }
+	}
+
+    public void CambiaTexturaCara(int cual)
+	{
+        material.mainTexture = texturasPantalla[cual];
+        material.SetTexture("_EmissionMap", texturasPantalla[cual]);
     }
+}
+
+public enum Estado
+{
+    idle = 0,
+    hablando = 1
 }
