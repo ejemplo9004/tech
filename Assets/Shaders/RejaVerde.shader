@@ -7,7 +7,8 @@ Shader "Morion/RejaVerde"
 		[HideInInspector] _AlphaCutoff("Alpha Cutoff ", Range(0, 1)) = 0.5
 		[HideInInspector] _EmissionColor("Emission Color", Color) = (1,1,1,1)
 		[ASEBegin]_Color("Color", Color) = (0,0,0,0)
-		[ASEEnd]_Alfa("Alfa", 2D) = "white" {}
+		_Alfa("Alfa", 2D) = "white" {}
+		[ASEEnd]_Normal("Normal", 2D) = "bump" {}
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 
 
@@ -189,6 +190,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -272,6 +274,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -305,6 +308,7 @@ Shader "Morion/RejaVerde"
 				int _PassValue;
 			#endif
 
+			sampler2D _Normal;
 			sampler2D _Alfa;
 
 
@@ -535,12 +539,14 @@ Shader "Morion/RejaVerde"
 
 				WorldViewDirection = SafeNormalize( WorldViewDirection );
 
+				float2 uv_Normal = IN.ase_texcoord8.xy * _Normal_ST.xy + _Normal_ST.zw;
+				
 				float2 uv_Alfa = IN.ase_texcoord8.xy * _Alfa_ST.xy + _Alfa_ST.zw;
 				float4 tex2DNode11 = tex2D( _Alfa, uv_Alfa );
 				
 
 				float3 BaseColor = _Color.rgb;
-				float3 Normal = float3(0, 0, 1);
+				float3 Normal = tex2D( _Normal, uv_Normal ).rgb;
 				float3 Emission = 0;
 				float3 Specular = 0.5;
 				float Metallic = 0;
@@ -762,6 +768,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -807,6 +814,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1076,6 +1084,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -1119,6 +1128,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1361,6 +1371,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -1414,6 +1425,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1665,6 +1677,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -1708,6 +1721,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1937,6 +1951,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -1983,6 +1998,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -2016,6 +2032,7 @@ Shader "Morion/RejaVerde"
 				int _PassValue;
 			#endif
 
+			sampler2D _Normal;
 			sampler2D _Alfa;
 
 
@@ -2191,11 +2208,13 @@ Shader "Morion/RejaVerde"
 					#endif
 				#endif
 
+				float2 uv_Normal = IN.ase_texcoord4.xy * _Normal_ST.xy + _Normal_ST.zw;
+				
 				float2 uv_Alfa = IN.ase_texcoord4.xy * _Alfa_ST.xy + _Alfa_ST.zw;
 				float4 tex2DNode11 = tex2D( _Alfa, uv_Alfa );
 				
 
-				float3 Normal = float3(0, 0, 1);
+				float3 Normal = tex2D( _Normal, uv_Normal ).rgb;
 				float Alpha = tex2DNode11.r;
 				float AlphaClipThreshold = tex2DNode11.r;
 				#ifdef ASE_DEPTH_WRITE_ON
@@ -2263,6 +2282,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -2342,6 +2362,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -2375,6 +2396,7 @@ Shader "Morion/RejaVerde"
 				int _PassValue;
 			#endif
 
+			sampler2D _Normal;
 			sampler2D _Alfa;
 
 
@@ -2598,12 +2620,14 @@ Shader "Morion/RejaVerde"
 
 				WorldViewDirection = SafeNormalize( WorldViewDirection );
 
+				float2 uv_Normal = IN.ase_texcoord8.xy * _Normal_ST.xy + _Normal_ST.zw;
+				
 				float2 uv_Alfa = IN.ase_texcoord8.xy * _Alfa_ST.xy + _Alfa_ST.zw;
 				float4 tex2DNode11 = tex2D( _Alfa, uv_Alfa );
 				
 
 				float3 BaseColor = _Color.rgb;
-				float3 Normal = float3(0, 0, 1);
+				float3 Normal = tex2D( _Normal, uv_Normal ).rgb;
 				float3 Emission = 0;
 				float3 Specular = 0.5;
 				float Metallic = 0;
@@ -2728,6 +2752,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -2769,6 +2794,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -2983,6 +3009,7 @@ Shader "Morion/RejaVerde"
 			#define ASE_FOG 1
 			#define _SURFACE_TYPE_TRANSPARENT 1
 			#define _ALPHATEST_ON 1
+			#define _NORMALMAP 1
 			#define ASE_SRP_VERSION 120107
 
 
@@ -3024,6 +3051,7 @@ Shader "Morion/RejaVerde"
 
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Color;
+			float4 _Normal_ST;
 			float4 _Alfa_ST;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -3242,10 +3270,12 @@ Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;6;0,0;Float;False;False;-1;
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;7;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;GBuffer;0;7;GBuffer;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;False;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;3;True;12;all;0;False;True;1;5;False;;10;False;;1;1;False;;10;False;;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;1;LightMode=UniversalGBuffer;False;False;0;;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;8;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;SceneSelectionPass;0;8;SceneSelectionPass;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;False;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;3;True;12;all;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=SceneSelectionPass;False;False;0;;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;9;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ScenePickingPass;0;9;ScenePickingPass;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;False;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;3;True;12;all;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=Picking;False;False;0;;0;0;Standard;0;False;0
-Node;AmplifyShaderEditor.ColorNode;10;-335.5732,-87.62134;Inherit;False;Property;_Color;Color;0;0;Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;11;-417.0565,101.6302;Inherit;True;Property;_Alfa;Alfa;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;11;-399.0565,278.6302;Inherit;True;Property;_Alfa;Alfa;1;0;Create;True;0;0;0;False;0;False;-1;None;9a24ad61b75811745a0e5cedf961e5ce;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;10;-404.5732,-171.6213;Inherit;False;Property;_Color;Color;0;0;Create;True;0;0;0;False;0;False;0,0,0,0;0.1509433,0.1509433,0.1509433,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;12;-764.5768,142.6986;Inherit;True;Property;_Normal;Normal;2;0;Create;True;0;0;0;False;0;False;-1;None;5bc2157d51710414ea885324f8fe3d68;True;0;False;bump;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 WireConnection;1;0;10;0
+WireConnection;1;1;12;0
 WireConnection;1;6;11;1
 WireConnection;1;7;11;0
 ASEEND*/
-//CHKSM=6639E25409CDAD1B0D2F36AAA868908AEBD86FAA
+//CHKSM=0EA26A01C82C937E959EDFFAA9E14607A01BF66C
