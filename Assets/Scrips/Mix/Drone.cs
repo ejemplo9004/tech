@@ -10,8 +10,11 @@ public class Drone : MonoBehaviour
     public float amplitud = 0.5f;
     public float velocidad = 2;
     public Renderer rPantalla;
+    public float angulosRutacion;
+    public Transform hijo;
 
     public Texture[] texturasPantalla;
+    Vector3 rotacionInicial;
 
 
     private Material material;
@@ -28,8 +31,8 @@ public class Drone : MonoBehaviour
         Vector3 posObjetivo = pivote.position + Vector3.up * (Mathf.Sin(Time.time * frecuencia) * amplitud);
         transform.position = Vector3.Lerp(transform.position, posObjetivo, velocidad * Time.deltaTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, pivote.rotation, velocidad * Time.deltaTime);
+        hijo.localEulerAngles = Mathf.Cos(Time.time * frecuencia) * angulosRutacion * Vector3.forward;
     }
-
 
     public IEnumerator Parpadear()
 	{
