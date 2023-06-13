@@ -104,7 +104,7 @@ Material:
     - _AlphaClip: 0
     - _AlphaClipThreshold: 0.5
     - _AlphaCutoff: 0.5
-    - _AmbientOcclusion: 1
+    - _AmbientOcclusion: 0
     - _BUILTIN_QueueControl: -1
     - _BUILTIN_QueueOffset: 0
     - _Blend: 0
@@ -119,11 +119,11 @@ Material:
     - _EnvironmentReflections: 1
     - _Escala: 0.2
     - _FresnelPower: 1
-    - _GlitchFrequency: 1
-    - _GlitchOffset: 0.026
+    - _GlitchFrequency: 4.97
+    - _GlitchOffset: 0
     - _GlitchSensitivity: 0
     - _GlitchSpeed: 1
-    - _GlitchStrength: 0.25
+    - _GlitchStrength: 0.001
     - _GlossMapScale: 1
     - _Glossiness: 0.4472136
     - _GlossyReflections: 1
@@ -134,7 +134,7 @@ Material:
     - _Line_Thickness: 0.93
     - _Metallic: 0
     - _Mode: 0
-    - _NormalStrength: 1
+    - _NormalStrength: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
@@ -145,7 +145,7 @@ Material:
     - _SliceFrequency: 0.1
     - _SliceJitter: 0.05
     - _SliceWidth: 0.2
-    - _Smoothness: 0.9
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
