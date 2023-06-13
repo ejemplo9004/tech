@@ -105,8 +105,17 @@ Material:
     - _AlphaClipThreshold: 0.5
     - _AlphaCutoff: 0.5
     - _AmbientOcclusion: 1
+    - _BUILTIN_AlphaClip: 1
+    - _BUILTIN_Blend: 0
+    - _BUILTIN_CullMode: 2
+    - _BUILTIN_DstBlend: 0
     - _BUILTIN_QueueControl: -1
     - _BUILTIN_QueueOffset: 0
+    - _BUILTIN_SrcBlend: 1
+    - _BUILTIN_Surface: 0
+    - _BUILTIN_ZTest: 4
+    - _BUILTIN_ZWrite: 1
+    - _BUILTIN_ZWriteControl: 0
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -130,8 +139,8 @@ Material:
     - _GridDensity: 6
     - _Intensidad: 1
     - _IntensidadTExtureBase: 0
-    - _Line_Falloff: -0.06
-    - _Line_Thickness: 0.93
+    - _Line_Falloff: -0.04
+    - _Line_Thickness: 0.95
     - _Metallic: 0
     - _Mode: 0
     - _NormalStrength: 1
