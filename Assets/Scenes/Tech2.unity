@@ -8044,6 +8044,10 @@ MonoBehaviour:
   lugares:
   - {fileID: 1713351822}
   - {fileID: 1688120164}
+  - {fileID: 1916280068}
+  - {fileID: 414654199}
+  - {fileID: 193005007}
+  - {fileID: 421774624}
 --- !u!1 &369118334
 GameObject:
   m_ObjectHideFlags: 0
@@ -9292,6 +9296,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420330165}
   m_Mesh: {fileID: 8394592409141056734, guid: e0f70df6243faf24d90c13824c238fd7, type: 3}
+--- !u!1 &421774623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421774624}
+  m_Layer: 0
+  m_Name: 5-Laboratorio2
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421774624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421774623}
+  m_LocalRotation: {x: 0, y: -0.3800696, z: 0, w: 0.92495793}
+  m_LocalPosition: {x: -11.2456, y: 10.263586, z: 17.4223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1493218433}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -44.676, z: 0}
 --- !u!1 &427764118
 GameObject:
   m_ObjectHideFlags: 0
@@ -13616,7 +13651,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 59fb2cc1f928b0c45aa1495fb09f5138, type: 2}
+      objectReference: {fileID: 2100000, guid: bedf5a199fe587e4c81062aaec3936e1, type: 2}
     - target: {fileID: 919132149155446097, guid: d544c0720134dd4479a2540d50b12209,
         type: 3}
       propertyPath: m_Name
@@ -32587,6 +32622,7 @@ Transform:
   - {fileID: 1916280068}
   - {fileID: 414654199}
   - {fileID: 193005007}
+  - {fileID: 421774624}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37094,7 +37130,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bedf5a199fe587e4c81062aaec3936e1, type: 2}
+      objectReference: {fileID: 2100000, guid: 59fb2cc1f928b0c45aa1495fb09f5138, type: 2}
     - target: {fileID: 919132149155446097, guid: d544c0720134dd4479a2540d50b12209,
         type: 3}
       propertyPath: m_Name
@@ -37211,7 +37247,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -39139,7 +39175,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -64848,7 +64884,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -68118,7 +68154,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
