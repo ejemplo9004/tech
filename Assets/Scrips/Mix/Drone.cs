@@ -16,6 +16,10 @@ public class Drone : MonoBehaviour
     public Texture[] texturasPantalla;
     Vector3 rotacionInicial;
 
+    public Texture[] texturasAnimacion;
+
+
+
 
     private Material material;
 
@@ -23,6 +27,7 @@ public class Drone : MonoBehaviour
 	{
         material = rPantalla.materials[1];
         StartCoroutine(Parpadear());
+        StartCoroutine(Bienvenida());
 	}
 
 
@@ -35,18 +40,34 @@ public class Drone : MonoBehaviour
     }
 
     public IEnumerator Parpadear()
-	{
-		while (true)
+    {
+        while (true)
 		{
             yield return new WaitForSeconds(Random.Range(2, 5));
 			if (estado == Estado.idle)
 			{
                 CambiaTexturaCara(1);
                 yield return new WaitForSeconds(0.2f);
+                CambiaTexturaCara(0);
+            }
+        }
+    }
+    public IEnumerator Bienvenida()
+    {
+        yield return new WaitForSeconds(5);
+        while (true)
+        {
+            estado = Estado.hablando;
+            for (int i = 2; i < 80; i++)
+            {
+                CambiaTexturaCara(i);
+                yield return new WaitForSeconds(0.1f);
             }
             CambiaTexturaCara(0);
+            estado = Estado.idle;
+            yield return new WaitForSeconds(Random.Range(20, 80));
         }
-	}
+    }
 
     public void CambiaTexturaCara(int cual)
 	{
