@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MATERIAL_SHADERUNITY
+  m_Name: MATERIAL_TALLERES
   m_Shader: {fileID: -6465566751694194690, guid: 23b0e9288f486694abb851a561575165,
     type: 3}
   m_ValidKeywords:
@@ -128,15 +128,15 @@ Material:
     - _EnvironmentReflections: 1
     - _Escala: 0.2
     - _FresnelPower: 1
-    - _GlitchFrequency: 1
+    - _GlitchFrequency: 0.25
     - _GlitchOffset: 0.026
     - _GlitchSensitivity: 0
     - _GlitchSpeed: 1
-    - _GlitchStrength: 0.25
+    - _GlitchStrength: 0.5
     - _GlossMapScale: 1
     - _Glossiness: 0.4472136
     - _GlossyReflections: 1
-    - _GridDensity: 6
+    - _GridDensity: 1.1
     - _Intensidad: 1
     - _IntensidadTExtureBase: 0
     - _Line_Falloff: -0.04
@@ -150,10 +150,10 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RotationRadians: 0
-    - _SliceDuration: 0.526
-    - _SliceFrequency: 0.1
-    - _SliceJitter: 0.05
-    - _SliceWidth: 0.2
+    - _SliceDuration: 0.298
+    - _SliceFrequency: 1
+    - _SliceJitter: 0.188
+    - _SliceWidth: 0.6
     - _Smoothness: 0.9
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -177,7 +177,7 @@ Material:
     - _Grid_Velocity: {r: 0, g: 0.05, b: 0, a: 0}
     - _PerAxisStrength: {r: 1, g: 1, b: 1, a: 0}
     - _RotationAxis: {r: 1, g: 0, b: 0, a: 0}
-    - _SliceDirection: {r: 0.2, g: 0, b: 0, a: 0}
+    - _SliceDirection: {r: 1.45, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Speed: {r: 1, g: 1, b: 0, a: 0}
     - _Velocidad: {r: 0, g: 0.5, b: 0, a: 0}
