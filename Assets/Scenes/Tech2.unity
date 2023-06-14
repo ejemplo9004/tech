@@ -14093,6 +14093,18 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 7e24d9f1395e8bd4ba10946197728c95, type: 3}
   - {fileID: 2800000, guid: c6f5632045c042c4787176f36c9200fc, type: 3}
   texturasAnimacion: []
+  txtMPro: {fileID: 0}
+  textos:
+  - 
+  - "Auditorio: Un espacio dise\xF1ado y adecuado para conferencias, convenciones
+    y proyecciones."
+  - "Defencarga: Laboratorio para la formaci\xF3n especializada en procesos log\xEDsticos."
+  - 'Oficinas: Espacios adecuados para las gestiones administrativas.'
+  - "Laboratorios de apoyo directo a la investigaci\xF3n formativa a estudiantes
+    en sus investigaciones."
+  - "Laboratorio de Simulaci\xF3n e Inteligencia Artificial:  Apoyo directo a las
+    maestr\xEDas de ciencias computacionales"
+  - "Hola, yo ser\xE9 tu drone gu\xEDa en este recorrido."
 --- !u!4 &655137291
 Transform:
   m_ObjectHideFlags: 0

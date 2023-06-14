@@ -46,6 +46,7 @@ public class ElTransportador : MonoBehaviour
 			imFondo.color = negro;
 			yield return new WaitForSeconds(0.02f);
 		}
+		Drone.singleton.MostrarLetrero(cual);
 		bloqueo = false;
 	}
 

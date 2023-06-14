@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Drone : MonoBehaviour
 {
@@ -17,17 +18,20 @@ public class Drone : MonoBehaviour
     Vector3 rotacionInicial;
 
     public Texture[] texturasAnimacion;
+    public TMPro.TextMeshProUGUI txtMPro;
+    public string[] textos;
 
-
-
+    bool bloqueo;
 
     private Material material;
+    public static Drone singleton;
 
 	private void Start()
 	{
         material = rPantalla.materials[1];
         StartCoroutine(Parpadear());
         StartCoroutine(Bienvenida());
+        MostrarLetrero(6);
 	}
 
 
@@ -73,6 +77,33 @@ public class Drone : MonoBehaviour
 	{
         material.mainTexture = texturasPantalla[cual];
         material.SetTexture("_EmissionMap", texturasPantalla[cual]);
+    }
+
+    public void MostrarLetrero(int cual)
+	{
+        StartCoroutine(Letrero(cual));
+	}
+
+    public IEnumerator Letrero(int cual)
+    {
+        yield return new WaitForSeconds(3);
+        while ((transform.position - pivote.position).magnitude > 0.3f)
+        {
+            yield return null;
+        }
+		if (cual > 0)
+		{
+            txtMPro.text = textos[cual];
+			if (!bloqueo)
+			{
+                bloqueo = true;
+                //Activar Animación
+                yield return new WaitForSeconds(10);
+                //Desactivar Animación
+                bloqueo = false;
+			}
+
+        }
     }
 }
 
