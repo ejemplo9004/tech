@@ -3,7 +3,32 @@ guid: 2b7b68f2ede044f40a1f06a0cc18cf5b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALA-HELICE
+    second: {fileID: 2100000, guid: 4c165f7fc16eaad47abbcd4e70d5e567, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aspas
+    second: {fileID: 2100000, guid: 27b1386a1f5362d4cb349436834eba80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NAVE.001
+    second: {fileID: 2100000, guid: ef450e26e9b84094a8d79a1221dc58bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PANTALLA
+    second: {fileID: 2100000, guid: faad9cf6bbde3b845aaa59d04c5f3e34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VIDRIO
+    second: {fileID: 2100000, guid: d109bdec9d469fd499640c76541850a9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
