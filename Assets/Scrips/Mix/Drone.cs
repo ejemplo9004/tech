@@ -25,6 +25,7 @@ public class Drone : MonoBehaviour
 
     private Material material;
     public static Drone singleton;
+    public Animator animaciones;
 
 	private void Start()
 	{
@@ -32,6 +33,7 @@ public class Drone : MonoBehaviour
         StartCoroutine(Parpadear());
         StartCoroutine(Bienvenida());
         MostrarLetrero(6);
+        singleton = this;
 	}
 
 
@@ -97,9 +99,9 @@ public class Drone : MonoBehaviour
 			if (!bloqueo)
 			{
                 bloqueo = true;
-                //Activar Animación
+                animaciones.SetBool("visible", true);
                 yield return new WaitForSeconds(10);
-                //Desactivar Animación
+                animaciones.SetBool("visible", false);
                 bloqueo = false;
 			}
 
